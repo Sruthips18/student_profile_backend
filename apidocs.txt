@@ -1,0 +1,52 @@
+1) api for adding new students
+
+    url:http://127.0.0.1:8000/students/
+    method:post
+    data:{
+            "name": "Akshara P",
+            "place": "Kannur",
+            "rollno": "UPAQS002",
+            "course": "MCA",
+            "mobile": "8835092034",
+            "email": "akshara12@gmail.com",
+            "parent_name": "Ravi",
+            "parent_num": "8865432345",
+            "guard_relation": "Father"
+
+        }
+
+    authorization:nill
+
+2)api for listing all student
+
+    url:http://127.0.0.1:8000/students/
+    method:get
+    data:nill
+    authorization:nill
+
+3)api for fetching a specific student detail 
+
+    url:http://127.0.0.1:8000/students/{id}/
+    method:get
+    data:nill
+    authorization:nill
+
+4) api for update a specific student detail
+  
+        url:http://127.0.0.1:8000/students/{id}
+    method:put
+    data:{
+             "id": 2,
+            "name": "Akshara P",
+            "place": "Kannur",
+            "rollno": "UPAQS002",
+            "course": "MCA",
+            "mobile": "8835092034",
+            "email": "akshara12@gmail.com",
+            "parent_name": "Ravi",
+            "parent_num": "8865432345",
+            "guard_relation": "Father"
+
+        }
+
+    authorization:nill
