@@ -7,6 +7,13 @@ class Student(models.Model):
     course=models.CharField(max_length=100)
     mobile=models.CharField(max_length=100)
     email=models.CharField(max_length=100)
+    GENDER_CHOICES = (
+            ('Male', 'Male'),
+            ('Female', 'Female'),
+            ('Others','others')
+            )
+
+    gender = models.CharField(choices=GENDER_CHOICES,default='M', max_length=100)
     parent_name=models.CharField(max_length=100)
     parent_num=models.CharField(max_length=100)
     guard_relation=models.CharField(max_length=100)
